@@ -47,8 +47,15 @@
                                                        class="form-control">
                                                 <?= form_error('form[SliderTitle]') ?>
                                             </div>
+                                            <div class="form-group">
+                                                <label for="name">Title 2 </label>
+                                                <input type="text" id="SliderTitle" name="form[title2]"
+                                                       value="<?= set_value('form[title2]', $obj->title2) ?>"
+                                                       class="form-control">
+                                                <?= form_error('form[title2]') ?>
+                                            </div>
 
-                                            <div class="form-group" style="display:none;">
+                                            <div class="form-group">
                                                 <label for="description">Short Description</label>
                                                 <textarea rows="5" name="form[ShortDescription]"
                                                           class="form-control"><?= set_value('form[ShortDescription]', $obj->ShortDescription) ?></textarea>

@@ -59,5 +59,15 @@ class Home extends CI_Controller
         $this->load->view('contact_us');
     }
 
+    public function events()
+    {
+        $this->load->view('events');
+    }
+
+    public function gellery()
+    {
+        $this->load->view('gellery');
+    }
+
 
 }

@@ -22,6 +22,7 @@ class Home extends Front_Controller
         $this->load->model('Channel_Tag_model', 'chanellTag');
         $this->load->model('Channel_model', 'channel');
         $this->load->model('Iptv_model', 'iptv');
+        $this->load->model('Gallery_model', 'gallery');
 
 
 
@@ -32,6 +33,7 @@ class Home extends Front_Controller
 
 //
         $d['sliders'] = $this->slider->order_by('Order', 'ASC')->get_all();
+        $d['blogs'] = $this->blog->order_by("Order", "ASC")->get_all();
 //        $d['related_products'] = $this->product->order_by("Order", "ASC")->limit(6)->get_all();
         $d['related_products'] = $this->product->limit(4)->order_by("ProductId", "DESC")->get_all();
 
@@ -94,10 +96,11 @@ class Home extends Front_Controller
 //        $d['UpcomingEvents'] = $this->event->limit(3)->order_by('EventDate')->get_many_by(
 //          array('EventDate >' => date('Y-m-d'))
 //        );
-//
+//s
 //        $this->load->model('gallery_model','gallery');
-//        $d['galleries'] = $this->gallery->limit(12)->order_by('GalleryId','desc')->get_all();
-
+        $d['galleries'] = $this->gallery->limit(10)->order_by('GalleryId','desc')->get_all();
+//            p($d['galleries']);
+//            exit;
 
 
 //        $d['main'] = $this->subcategory->join('category')
@@ -185,7 +188,10 @@ class Home extends Front_Controller
         $this->view('about_us');
     }
 
-
+    public function detail($id)
+    {
+        p($id);
+    }
 
 
 
@@ -218,13 +224,13 @@ class Home extends Front_Controller
     {
         $this->view('member');
     }
-//    public function news_events()
-//    {
-//        $this->load->model('Events_model','event');
-//        $d['events'] = $this->event->order_by('Order','ASC')->get_all();
-//
-//        $this->view('news_events',$d);
-//    }
+    public function news_events()
+    {
+        $this->load->model('Events_model','event');
+        $d['events'] = $this->event->order_by('Order','ASC')->limit(3)->get_all();
+
+        $this->view('news_events',$d);
+    }
     public function price_list()
     {
         $this->view('price_list');

@@ -33,6 +33,10 @@ class Migration_Slider_create_table extends CI_Migration
                 'type' => 'VARCHAR',
                 'constraint' => 255
             ],
+            "title2" => [
+                'type' => 'VARCHAR',
+                'constraint' => 255
+            ],
             "Description" => [
                 'type' => 'VARCHAR',
                 'constraint' => 255

@@ -54,7 +54,7 @@
 
     <!-- Start Header Middle -->
     <div class="container header-middle">
-        <div class="row"> <span class="col-xs-6 col-sm-3"><a href="index.html"><img src="<?= base_url() ?>media/images/logo.png" class="img-responsive" alt=""></a></span>
+        <div class="row"> <span class="col-xs-6 col-sm-3"><a href="<?= base_url('/') ?>"><img src="<?= base_url() ?>media/images/logo.png" class="img-responsive" alt=""></a></span>
             <div class="col-xs-6 col-sm-3"></div>
             <div class="col-xs-6 col-sm-9">
                 <div class="contact clearfix">
@@ -76,9 +76,9 @@
             <div class="navbar-collapse collapse" id="navbar">
 
                 <ul class="nav navbar-nav">
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a href="">About Us</a></li>
-                    <li> <a href="">Our Service</a></li>
+                    <li> <a href="<?= base_url('/') ?>">Home</a></li>
+                    <li> <a href="<?= base_url('About-Us') ?>">About Us</a></li>
+                    <li> <a href="<?= base_url('Our-Service') ?>">Our Service</a></li>
                     <li class="dropdown"> <a data-toggle="dropdown" href="#">Our Courses <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="">Course 1</a></li>
@@ -87,11 +87,11 @@
                             <li><a href="">Course 4</a></li>
                         </ul>
                     </li>
-                    <li> <a href="">Gallery</a></li>
-                    <li class="dropdown"> <a data-toggle="dropdown" href="#">News & Events </a>
+                    <li> <a href="<?= base_url('Gallery') ?>">Gallery</a></li>
+                    <li> <a href="<?= base_url('Events') ?>">News & Evetns</a></li>
 
                     </li>
-                    <li> <a href="">Contact Us</a></li>
+                    <li> <a href="<?= base_url('Contact-Us') ?>">Contact Us</a></li>
                 </ul>
             </div>
         </div>
