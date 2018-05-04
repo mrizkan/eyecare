@@ -13,8 +13,8 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="content">
-                    <h1>News & Events</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h1>News & Events Details</h1>
+
                 </div>
             </div>
         </div>
@@ -28,13 +28,15 @@
         <!-- Start Left Column -->
         <div class="col-sm-12 blog-left">
             <ul class="blog-listing detail">
-                <li> <img src="<?= base_url() ?>media/images/blog-detail-img.jpg" class="img-responsive" alt="">
-                    <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                <?php foreach ($eventq as $event): ?>
+                <li> <img src="<?=UP.$event->Image ?>" class="img-responsive" alt="">
+                    <h2><?=$event->EventTitle ?></h2>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software</p>
+                    <p><?=$event->Description ?></p>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
                 </li>
+                <?php endforeach; ?>
             </ul>
 
 

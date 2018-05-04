@@ -195,7 +195,9 @@ class Home extends Front_Controller
     public function detail($id)
     {
 //        p($id);
-        $this->view('events-detail');
+        $this->load->model('Events_model','event');
+        $d['eventq'] = $this->db->from('events')->where(['EventID'=>$id])->get()->result();
+        $this->view('events-detail', $d);
     }
 
 
