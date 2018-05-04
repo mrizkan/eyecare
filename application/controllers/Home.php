@@ -23,6 +23,7 @@ class Home extends Front_Controller
         $this->load->model('Channel_model', 'channel');
         $this->load->model('Iptv_model', 'iptv');
         $this->load->model('Gallery_model', 'gallery');
+        $this->load->model('Events_model', 'event');
 
 
 
@@ -34,18 +35,20 @@ class Home extends Front_Controller
 //
         $d['sliders'] = $this->slider->order_by('Order', 'ASC')->get_all();
         $d['blogs'] = $this->blog->order_by("Order", "ASC")->get_all();
+        $d['events'] = $this->event->order_by("Order", "DESC")->limit(2)->get_all();
+        $d['galleries'] = $this->gallery->limit(10)->order_by('GalleryId','desc')->get_all();
 //        $d['related_products'] = $this->product->order_by("Order", "ASC")->limit(6)->get_all();
-        $d['related_products'] = $this->product->limit(4)->order_by("ProductId", "DESC")->get_all();
+//        $d['related_products'] = $this->product->limit(4)->order_by("ProductId", "DESC")->get_all();
 
 
 
 //        p($d['mediaCom']);
 //        P($d['sliders']);
 
-        $d['our_product_1'] = $this->category->order_by("Order", "ASC")->limit(3)->get_all();
+//        $d['our_product_1'] = $this->category->order_by("Order", "ASC")->limit(3)->get_all();
 //        p($this->db->last_query());
 
-        foreach($d['our_product_1'] as $op1){
+/*        foreach($d['our_product_1'] as $op1){
 //            $op1->head = $this->category->get($op1->CategoryId);
 //            $op1->product = $this->product->get($op1->CategoryId);
             $op1->product = $this->db->from('product')
@@ -64,8 +67,8 @@ class Home extends Front_Controller
             $op2->product2 = $this->db->from('product')
                 ->join('category','category.CategoryId = product.CategoryId')
                 ->select("product.*,category.CategoryTitle")
-                ->where(['product.CategoryId'=>$op2->CategoryId ])->limit(4)->get()->result();
-        }
+                ->where(['product.CategoryId'=>$op2->CategoryId ])->limit(4)->get()->result();*/
+//        }
         $this->view('index', $d);
 
 //        p($d['our_product_2']);
@@ -98,7 +101,7 @@ class Home extends Front_Controller
 //        );
 //s
 //        $this->load->model('gallery_model','gallery');
-        $d['galleries'] = $this->gallery->limit(10)->order_by('GalleryId','desc')->get_all();
+
 //            p($d['galleries']);
 //            exit;
 
@@ -185,12 +188,14 @@ class Home extends Front_Controller
 
     public function about_us()
     {
-        $this->view('about_us');
+
+        $this->view('about-us');
     }
 
     public function detail($id)
     {
-        p($id);
+//        p($id);
+        $this->view('events-detail');
     }
 
 
@@ -220,6 +225,17 @@ class Home extends Front_Controller
         $this->view('object');
     }
 
+    public function gallery()
+    {
+        $this->load->model('Gallery_model', 'gallery');
+        $d['galleriesr'] = $this->gallery->order_by('GalleryId','DESC')->get_all();
+        $this->view('gallery', $d);
+    }
+    public function students()
+    {
+        $this->view('slogin');
+    }
+
     public function member()
     {
         $this->view('member');
@@ -227,9 +243,9 @@ class Home extends Front_Controller
     public function news_events()
     {
         $this->load->model('Events_model','event');
-        $d['events'] = $this->event->order_by('Order','ASC')->limit(3)->get_all();
+        $d['eventp'] = $this->event->order_by('Order','DESC')->get_all();
 
-        $this->view('news_events',$d);
+        $this->view('events',$d);
     }
     public function price_list()
     {
@@ -290,7 +306,7 @@ class Home extends Front_Controller
             }
         } else {
 
-            $this->view('contact_us', $d);
+            $this->view('contact-us', $d);
 //            $this->load->view('contacts');
         }
 
@@ -302,6 +318,7 @@ class Home extends Front_Controller
     {
         $this->view('services');
     }
+
     public function ourclients()
     {
         $this->view('client');

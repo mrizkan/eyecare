@@ -1,4 +1,4 @@
-<?php include ('view/inc/header.php'); ?>
+<?php include ('inc/header.php'); ?>
 
 <!-- Start Banner -->
 
@@ -28,7 +28,7 @@
 
 
             </div>
-            <div class="col-md-5 about-right"> <img src="images/who-we-are-img.jpg" class="img-responsive" alt=""> </div>
+            <div class="col-md-5 about-right"> <img src="<?= base_url() ?>media/images/who-we-are-img.jpg" class="img-responsive" alt=""> </div>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -45,7 +45,7 @@
     </div>
 </section>
 
-    <section class="news-events padding">
+   <!-- <section class="news-events padding">
         <div class="container">
             <h2>Coordinators</h2>
             <ul class="row cs-style-3">
@@ -99,7 +99,7 @@
 <!-- End About -->
 
 <!--Rizkan-->
-    <section class="news-events padding">
+   <!-- <section class="news-events padding">
         <div class="container">
             <h2>Management (Directors)</h2>
             <ul class="row cs-style-3">
@@ -162,7 +162,7 @@
 
 
         </div>
-    </section>
+    </section>-->-->
 
 
 

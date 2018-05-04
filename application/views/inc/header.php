@@ -62,7 +62,7 @@
                         <li> <span>Email</span> <a href="mailto:info@eyecare.lk">info@eyecare.lk</a> </li>
                         <li> <span>Call Us</span>+94 112 682 277</li>
                     </ul>
-                    <a href="" class="login">Student Login <span class="icon-more-icon"></span></a> </div>
+                    <a href="Students-login" class="login">Student Login <span class="icon-more-icon"></span></a> </div>
             </div>
         </div>
     </div>
@@ -78,13 +78,12 @@
                 <ul class="nav navbar-nav">
                     <li> <a href="<?= base_url('/') ?>">Home</a></li>
                     <li> <a href="<?= base_url('About-Us') ?>">About Us</a></li>
-                    <li> <a href="<?= base_url('Our-Service') ?>">Our Service</a></li>
+                    <li> <a href="<?= base_url('Services') ?>">Our Service</a></li>
                     <li class="dropdown"> <a data-toggle="dropdown" href="#">Our Courses <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="">Course 1</a></li>
-                            <li><a href="">Course 2</a></li>
-                            <li><a href="">Course 3</a></li>
-                            <li><a href="">Course 4</a></li>
+                            <?php foreach ($blogs as $blog): ?>
+                            <li><a href=""><?=$blog->BlogTitle ?></a></li>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
                     <li> <a href="<?= base_url('Gallery') ?>">Gallery</a></li>

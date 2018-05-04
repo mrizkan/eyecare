@@ -5,7 +5,7 @@ include_once APPPATH . "modules/admin/core/MY_Controller.php";
 class Events extends MY_Controller
 {
     var $page = "event";
-    var $img_width = 263;
+    var $img_width = 360;
     var $img_height = 280;
 
     function __construct()
@@ -31,8 +31,8 @@ class Events extends MY_Controller
 
         $this->form_validation->set_rules("form[EventTitle]", "Event Name", "required");
         $this->form_validation->set_rules("form[Image]", "Event Image", "required");
-        $this->form_validation->set_rules("form[Description]", "Description", "required");
-        $this->form_validation->set_rules("form[ShortDescription]", "Short Description", "required");
+//        $this->form_validation->set_rules("form[Description]", "Description", "required");
+//        $this->form_validation->set_rules("form[ShortDescription]", "Short Description", "required");
 
         if ($this->form_validation->run()) {
 

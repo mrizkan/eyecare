@@ -3,6 +3,16 @@
 
 
 <style>
+    .form-wrapper select {
+        width: 100%;
+        padding: 0 22px;
+        height: 46px;
+        border: none;
+        border-bottom: 1px #dae4e8 solid;
+        border-left: 1px #dae4e8 solid;
+        font-size: 12px;
+        color: #858788;
+    }
 @media (max-width: 767px)
 {
 .contact-detail .address {
@@ -10,6 +20,7 @@
 } 
 
 }
+
 </style>
 
     <!-- Start Banner -->

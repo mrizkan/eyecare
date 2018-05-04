@@ -67,7 +67,7 @@
                         optometry. Today the Eye Care Institute conducts different levels of Optician & Optometry
                         programmes to cater the demand of the country. Further, Eye Care provides largest network of
                         Optometry programmes with the use of its past students.</p>
-                    <div class="know-more-wrapper"><a href="#" class="know-more">Know More <span
+                    <div class="know-more-wrapper"><a href="About-Us" class="know-more">Know More <span
                                     class="icon-more-icon"></span></a></div>
                 </div>
                 <div class="col-sm-5 col-sm-pull-7">
@@ -98,7 +98,7 @@
                             <div class="duration">
                                 <h4>Course</h4>
                                 <span> Details</span></div>
-                            <a href="#"><span class="icon-more-icon"></span></a></div>
+                            <a href="<?= base_url('Cause-Details/').url_title($blog->BlogTitle).'/'.$blog->BlogId ?>"><span class="icon-more-icon"></span></a></div>
                     </div>
                 </li>
                 <?php endforeach; ?>
@@ -174,44 +174,24 @@
         <div class="container">
             <h2><span>There are many ways to learn</span>News and events</h2>
             <ul class="row cs-style-3">
+                <?php foreach ($events as $event): ?>
                 <li class="col-sm-4">
                     <div class="inner">
-                        <figure><img src="<?= base_url() ?>media/images/new-event-img1.jpg" class="img-responsive">
+                        <figure><img src="<?=UP.$event->Image ?>" class="img-responsive">
                             <figcaption>
-                                <div class="cnt-block"><a href="<?= base_url('Event-Details/').url_title($row->EventTitle).'/'.$row->EventId ?>" class="plus-icon">+</a>
-                                    <h3>We have added new features to Dream Palace<br><br></h3>
+                                <div class="cnt-block"><a href="<?= base_url('Event-Details/').url_title($event->EventTitle).'/'.$event->EventId ?>" class="plus-icon">+</a>
+                                    <h3><?=$event->EventTitle ?><br><br></h3>
 
                                 </div>
                             </figcaption>
                         </figure>
                     </div>
                 </li>
-                <li class="col-sm-4">
-                    <div class="inner">
-                        <figure><img src="<?= base_url() ?>media/images/new-event-img2.jpg" class="img-responsive">
-                            <figcaption>
-                                <div class="cnt-block"><a href="#" class="plus-icon">+</a>
-                                    <h3>We have added new features to Dream Palace<br><br></h3>
+                <?php endforeach; ?>
 
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </li>
-                <li class="col-sm-4">
-                    <div class="inner">
-                        <figure><img src="<?= base_url() ?>media/images/new-event-img3.jpg" class="img-responsive">
-                            <figcaption>
-                                <div class="cnt-block"><a href="#" class="plus-icon">+</a>
-                                    <h3>We have added new features to Dream Palace<br><br></h3>
 
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </li>
             </ul>
-            <div class="know-more-wrapper"><a href="#" class="know-more">More Post <span class="icon-more-icon"></span></a>
+            <div class="know-more-wrapper"><a href="Events" class="know-more">More Post <span class="icon-more-icon"></span></a>
             </div>
         </div>
     </section>
@@ -223,86 +203,19 @@
             <h2><span>OUR INSTITUTE have a lot to offer for our students</span>TAKE A INSTITUTE TOUR</h2>
         </div>
         <ul class="gallery clearfix">
+
+            <?php foreach ($galleries as $gallery): ?>
             <li>
                 <div class="overlay">
                     <h3>Lorem ipsum</h3>
                     <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
+                    <a class="galleryItem" href="<?=UP.$gallery->Image ?>"><span
                                 class="icon-enlarge-icon"></span></a></div>
                 <figure><img src="<?= base_url() ?>media/images/tour1.jpg" class="img-responsive" alt=""></figure>
             </li>
-            <li>
-                <div class="overlay">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
-                                class="icon-enlarge-icon"></span></a></div>
-                <figure><img src="<?= base_url() ?>media/images/tour2.jpg" class="img-responsive" alt=""></figure>
-            </li>
-            <li>
-                <div class="overlay">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
-                                class="icon-enlarge-icon"></span></a></div>
-                <figure><img src="<?= base_url() ?>media/images/tour3.jpg" class="img-responsive" alt=""></figure>
-            </li>
-            <li>
-                <div class="overlay">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
-                                class="icon-enlarge-icon"></span></a></div>
-                <figure><img src="<?= base_url() ?>media/images/tour4.jpg" class="img-responsive" alt=""></figure>
-            </li>
-            <li>
-                <div class="overlay">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
-                                class="icon-enlarge-icon"></span></a></div>
-                <figure><img src="<?= base_url() ?>media/images/tour5.jpg" class="img-responsive" alt=""></figure>
-            </li>
-            <li>
-                <div class="overlay">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
-                                class="icon-enlarge-icon"></span></a></div>
-                <figure><img src="<?= base_url() ?>media/images/tour6.jpg" class="img-responsive" alt=""></figure>
-            </li>
-            <li>
-                <div class="overlay">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
-                                class="icon-enlarge-icon"></span></a></div>
-                <figure><img src="<?= base_url() ?>media/images/tour7.jpg" class="img-responsive" alt=""></figure>
-            </li>
-            <li>
-                <div class="overlay">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
-                                class="icon-enlarge-icon"></span></a></div>
-                <figure><img src="<?= base_url() ?>media/images/tour8.jpg" class="img-responsive" alt=""></figure>
-            </li>
-            <li>
-                <div class="overlay">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
-                                class="icon-enlarge-icon"></span></a></div>
-                <figure><img src="<?= base_url() ?>media/images/tour9.jpg" class="img-responsive" alt=""></figure>
-            </li>
-            <li>
-                <div class="overlay">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p>
-                    <a class="galleryItem" href="<?= base_url() ?>media/images/dummy.jpg"><span
-                                class="icon-enlarge-icon"></span></a></div>
-                <figure><img src="<?= base_url() ?>media/images/tour10.jpg" class="img-responsive" alt=""></figure>
-            </li>
+            <?php endforeach; ?>
+
+
         </ul>
     </section>
     <!-- End Campus Tour Section -->

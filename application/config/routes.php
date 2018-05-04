@@ -59,9 +59,11 @@ $route['About-Us'] = 'Home/about_us';
 $route['Contact-Us'] = 'Home/contact_us';
 $route['Services'] = 'Home/services';
 $route['Packages'] = 'Home/packages';
-$route['Events'] = 'Home/events';
+$route['Events'] = 'Home/news_events';
 $route['Gallery'] = 'Home/gallery';
 $route['Event-Details/(.+)/(.+)'] = 'Home/detail/$2';
+$route['Cause-Details/(.+)/(.+)'] = 'Home/detail2/$2';
+$route['Students-login'] = 'Home/students';
 //$route['IP-Tv'] = 'Home/iptv';
 //$route['Package-Details/(.+)/(.+)/(:num)'] = 'Home/package_details/$3';
 

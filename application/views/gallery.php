@@ -19,130 +19,24 @@
 
 <!-- Start Campus Tour -->
 
-<section class="campus-tour padding-lg">
+    <section class="campus-tour"">
 
-    <!-- gallery filter -->
-    <div class="container text-center">
-        <div class="isotopeFilters">
-            <ul class="gallery-filter clearfix">
-                <li class="active"><a href="#" data-filter="*">All</a></li>
-                <li><a href="#" data-filter=".classes">Classes</a></li>
-                <li><a href="#" data-filter=".Party">Facilities</a></li>
+        <ul class="gallery clearfix">
 
-            </ul>
-        </div>
-    </div>
-    <!-- end filter -->
+            <?php foreach ($galleriesr as $gallery): ?>
+                <li>
+                    <div class="overlay">
+                        <h3><?=$gallery->GalleryTitle ?></h3>
+                        <p>Lorem ipsum</p>
+                        <a class="galleryItem" href="<?=UP.$gallery->Image ?>"><span
+                                    class="icon-enlarge-icon"></span></a></div>
+                    <figure><img src="<?= base_url() ?>media/images/tour1.jpg" class="img-responsive" alt=""></figure>
+                </li>
+            <?php endforeach; ?>
 
-    <ul class="gallery clearfix isotopeContainer">
-        <li class="isotopeSelector contest">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
 
-                <a class="galleryItem" href="images/tour1.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour1.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector Party contest music">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour2.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour2.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector Party contest music">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour3.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour3.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector Party music">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour4.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour4.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector contest classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour5.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour5.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector music contest classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour6.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour6.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector Party music contest classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour7.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour7.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector Party contest music contest classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour8.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour8.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector Party music contest classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour9.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour9.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector Party music contest classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour10.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour10.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector contest classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour4.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour4.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector music Party">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour5.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour5.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector music Party classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour6.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour6.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector Party classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour3.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour3.jpg" class="img-responsive" alt=""></figure>
-        </li>
-        <li class="isotopeSelector classes">
-            <div class="overlay">
-                <h3>British Acadamy</h3>
-
-                <a class="galleryItem" href="images/tour7.jpg"><span class="icon-enlarge-icon"></span></a>  </div>
-            <figure><img src="images/tour7.jpg" class="img-responsive" alt=""></figure>
-        </li>
-    </ul>
-
-</section>
+        </ul>
+    </section>
 
 <!-- End Campus Tour -->
 
