@@ -82,7 +82,7 @@
                     <li class="dropdown"> <a data-toggle="dropdown" href="#">Our Courses <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <?php foreach ($blogs as $blog): ?>
-                            <li><a href=""><?=$blog->BlogTitle ?></a></li>
+                            <li><a href="<?= base_url('Cause-Details/').url_title($blog->BlogTitle).'/'.$blog->BlogId ?>"><?=$blog->BlogTitle ?></a></li>
                             <?php endforeach; ?>
                         </ul>
                     </li>

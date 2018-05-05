@@ -75,8 +75,8 @@
 
                                         <div class="col-lg-6" >
                                             <div class="form-group">
-                                                <label> Event Default Image
-                                                    <small> image size ( 540px * 320px )</small>
+                                                <label> Event Image
+                                                    <small> image size ( 750px * 415px )</small>
                                                 </label>
                                             </div>
                                             <div class="fileinput-button btn btn-success sepH_b">

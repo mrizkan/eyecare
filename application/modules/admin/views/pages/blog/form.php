@@ -76,7 +76,7 @@
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label> Cause Default Image
-                                                    <small> image size ( 540px * 320px )</small>
+                                                    <small> image size ( 440px * 290px )</small>
                                                 </label>
                                             </div>
                                             <div class="fileinput-button btn btn-success sepH_b">
@@ -134,7 +134,7 @@
                     <div>
                         <div class="card-box" style="display: none">
                             <h4 class="header-title m-t-0 m-b-30">More Images
-                                <small> image size ( 540px * 320px )</small>
+                                <small> image size ( 440px * 290px )</small>
                             </h4>
 
                             <div class="row ">

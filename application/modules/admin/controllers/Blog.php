@@ -5,8 +5,8 @@ include_once APPPATH . "modules/admin/core/MY_Controller.php";
 class Blog extends MY_Controller
 {
     var $page = "blog";
-    var $img_width = 189;
-    var $img_height = 209;
+    var $img_width = 440;
+    var $img_height = 290;
 
     function __construct()
     {

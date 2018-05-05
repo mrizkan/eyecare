@@ -200,6 +200,13 @@ class Home extends Front_Controller
         $this->view('events-detail', $d);
     }
 
+    public function detail2($id)
+    {
+//        p($id);
+        $this->load->model('Blog_model','blog');
+        $d['blogq'] = $this->db->from('blog')->where(['BlogID'=>$id])->get()->result();
+        $this->view('course-details', $d);
+    }
 
 
     public function business()
@@ -271,31 +278,33 @@ class Home extends Front_Controller
 
             $this->form_validation->set_rules('name', 'Name', 'required');
             $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
-            $this->form_validation->set_rules('enquiry', 'Message', 'required');
+            $this->form_validation->set_rules('message', 'Message', 'required');
 //            $this->form_validation->set_rules('form_phone', 'Phone', 'numeric');
             if ($this->form_validation->run()) {
 //                p('02');
                 $this->load->library('email');
                 $config['mailtype'] = 'html';
+
                 $this->email->initialize($config);
                 $this->email->to(email);
-                $this->email->from($this->input->post('form_email'), $this->input->post('form_name'));
+                $this->email->from($this->input->post('email'), $this->input->post('name'));
                 $this->email->subject(TITLE . " - Contact Us Form");
                 $msg = '<html><body>';
-                $msg .= '<img src="' . base_url() . 'media/images/logo.jpg" alt="' . TITLE . '" />';
+                $msg .= '<img src="' . base_url() . 'media/images/logo.png" alt="' . TITLE . '" />';
                 $msg .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
                 $msg .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . strip_tags($this->input->post('name')) . "</td></tr>";
                 $msg .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($this->input->post('email')) . "</td></tr>";
+                $msg .= "<tr><td><strong>Phone:</strong> </td><td>" . strip_tags($this->input->post('phone')) . "</td></tr>";
 
-                $msg .= "<tr><td><strong>Comment:</strong> </td><td>" . strip_tags($this->input->post('enquiry')) . "</td></tr>";
+                $msg .= "<tr><td><strong>Message:</strong> </td><td>" . strip_tags($this->input->post('message')) . "</td></tr>";
                 $msg .= "</table>";
                 $msg .= "</body></html>";
 
                 $this->email->message($msg);
                 $this->email->send();
-                $d['message'] = "<div class='alert alert-success' style='color: green'>Your message was sent successfully. Thanks.</div>";
 
-                $this->view('contact_us', $d);
+                echo "success";
+                //  $this->view('contact_us', $d);
             } else {
                 $d['name'] = $this->input->post('form_name');
                 $d['email'] = $this->input->post('form_email');
@@ -304,9 +313,11 @@ class Home extends Front_Controller
                 $d['comment'] = $this->input->post('form_message');
 
                 $d['message'] = "<div class='alert alert-danger' style='color: green'>Validation errors occurred....!<br/> Please confirm the fields and submit again.</div>";
-                $this->view('contact_us', $d);
+                echo"there is a problem";
+                // $this->view('contact_us', $d);
             }
         } else {
+            $d['blogs'] = $this->blog->order_by("Order", "ASC")->get_all();
 
             $this->view('contact-us', $d);
 //            $this->load->view('contacts');

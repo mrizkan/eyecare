@@ -31,7 +31,7 @@
 
 <section class="news-events padding-lg">
     <div class="container">
-        <h2><span>There are many ways to learn</span>News and events</h2>
+
         <ul class="row cs-style-3">
             <?php foreach ($eventp as $event): ?>
                 <li class="col-sm-4" style="margin-bottom: 20px;">

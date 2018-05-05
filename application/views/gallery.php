@@ -27,7 +27,7 @@
                 <li>
                     <div class="overlay">
                         <h3><?=$gallery->GalleryTitle ?></h3>
-                        <p>Lorem ipsum</p>
+                        <br>
                         <a class="galleryItem" href="<?=UP.$gallery->Image ?>"><span
                                     class="icon-enlarge-icon"></span></a></div>
                     <figure><img src="<?= base_url() ?>media/images/tour1.jpg" class="img-responsive" alt=""></figure>

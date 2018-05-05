@@ -5,8 +5,8 @@ include_once APPPATH . "modules/admin/core/MY_Controller.php";
 class Events extends MY_Controller
 {
     var $page = "event";
-    var $img_width = 360;
-    var $img_height = 280;
+    var $img_width = 750;
+    var $img_height = 415;
 
     function __construct()
     {

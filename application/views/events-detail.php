@@ -29,7 +29,7 @@
         <div class="col-sm-12 blog-left">
             <ul class="blog-listing detail">
                 <?php foreach ($eventq as $event): ?>
-                <li> <img src="<?=UP.$event->Image ?>" class="img-responsive" alt="">
+                <li> <img src="<?=UP.$event->Image ?>" class="img-responsive" style="margin-left: 180px;" alt="">
                     <h2><?=$event->EventTitle ?></h2>
 
                     <p><?=$event->Description ?></p>

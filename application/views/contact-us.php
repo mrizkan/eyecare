@@ -80,15 +80,10 @@
                 <div class="row input-row">
                     <div class="col-sm-6">
                         <select name="course" required>
-                            <option value="Course Not Selected">Select a Course</option>
-                            <option value="The English Camp (Residential English Course)">The English Camp (Residential
-                                English Course)
-                            </option>
-                            <option value="Non Residential Course">Non Residential Course</option>
+                            <?php foreach ($blogs as $blog): ?>
+                            <option value="<?=$blog->BlogTitle ?>"><?=$blog->BlogTitle ?></option>
+                            <?php endforeach; ?>
 
-                            <option value="Week End Intensive Course">Week End Intensive Course</option>
-
-                            <option value="Adults Course">Adults Course</option>
                         </select>
                     </div>
 
@@ -126,30 +121,31 @@
         </div>
     </section>
 
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<script src="<?= base_url('media/js/') ?>jquery-1.11.1.min.js"></script>
+<script src="<?= base_url('media/js/') ?>bootstrap.min.js"></script>
 
-    <script>
+<script>
 
-        // this is the id of the form
-        $(document).ready(function () {
+    // this is the id of the form
+    $(document).ready(function(){
 
-            $("#contactfrm").submit(function (e) {
-                //  e.preventDefault();
-                $.ajax({
-                    type: "POST",
-                    url: 'mail.php',
-                    data: $(this).serialize(), // serializes the form's elements.
-                    success: function (data) {
-                        $('#status').html('<div  class="msg-success">Your Query Sent Successfully We will Contact you Soon</div>');
-                        $('#contactfrm')[0].reset();
-                    }
-                });
-                return false;
+        $("#contactform").submit(function(e) {
+            //  e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: '<?= base_url('Home/contact_us') ?>',
+                data: $(this).serialize(), // serializes the form's elements.
+                success: function(data)
+                {
+                    $('#status').html('<p  class="fontresize text-center color-light bold">Your Query Sent Successfully We will Contact you Soon</p>');
+                    $('#contactform')[0].reset();
+                }
             });
-
+            return false;
         });
-    </script>
+
+    });
+</script>
 
     <!-- end Contact Us -->
 

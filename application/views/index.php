@@ -36,7 +36,7 @@
                     <div class="detail">
                         <h3>See Our Courses</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing...</p>
-                        <a href="#" class="more"><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                        </div>
                 </li>
                 <li class="col-sm-4 prospects clearfix equal-hight">
                     <div class="icon"><img src="<?= base_url() ?>media/images/prospects-ico.png" class="img-responsive"
@@ -44,7 +44,7 @@
                     <div class="detail">
                         <h3><span>Download</span>Prospects</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing...</p>
-                        <a href="#" class="more"><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                        </div>
                 </li>
                 <li class="col-sm-4 certification clearfix equal-hight">
                     <div class="icon"><img src="<?= base_url() ?>media/images/certification-ico.png"
@@ -52,7 +52,7 @@
                     <div class="detail">
                         <h3>Certification</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing...</p>
-                        <a href="#" class="more"><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                        </div>
                 </li>
             </ul>
         </div>
@@ -91,7 +91,7 @@
                 <?php foreach ($blogs as $blog): ?>
                 <li>
                     <div class="inner">
-                        <figure><img src="<?=UP.$blog->Image ?>" alt=""></figure>
+                        <figure><img src="<?= base_url() ?>media/images/course-img2.jpg" alt=""></figure>
                         <h3> <span><?=$blog->BlogTitle ?></span></h3>
                         <p><?=$blog->ShortDescription ?></p>
                         <div class="bottom-txt clearfix">
