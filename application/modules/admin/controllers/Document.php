@@ -60,7 +60,6 @@ class Document extends MY_Controller
                     $post['File'] = $this->upload->data('file_name');
                 }
 
-
                 $this->db->trans_begin();
                 if ($_id) {
                     $this->model->update($_id, $post);
