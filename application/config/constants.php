@@ -90,7 +90,7 @@ define("title", "Eye Care");
 define("email", "rizkancool@gmail.com");
 
 
-if (@end(explode('.', $_SERVER['SERVER_NAME'])) == 'dev') {
+if (@end(explode('.', $_SERVER['SERVER_NAME'])) == 'test') {
 
     define('HOST', 'localhost');
     define('DB', 'eyecare');

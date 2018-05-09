@@ -114,15 +114,15 @@
                 </li>
 
 
-                <li class="has_sub" style="display: none">
+                <li class="has_sub" >
                     <a href="#" class="waves-effect">
                         <i class="ion ion-android-book"></i>
                         <span> Vacancy </span> <span
                             class="menu-arrow"></span> </a>
                     <ul style="">
-                        <li><a href="<?= base_url('admin/vacancy/create') ?>"><span>Create</span></a></li>
-                        <li><a href="<?= base_url('admin/vacancy/') ?>"><span>Manage</span></a></li>
-                        <li><a href="<?= base_url('admin/vacancy/rearrange') ?>"><span>Vacancy Re-arrange</span></a>
+                        <li><a href="<?= base_url('admin/Document/create') ?>"><span>Create</span></a></li>
+                        <li><a href="<?= base_url('admin/Document/') ?>"><span>Manage</span></a></li>
+<!--                        <li><a href="--><?//= base_url('admin/vacancy/rearrange') ?><!--"><span>Vacancy Re-arrange</span></a>-->
                         </li>
                     </ul>
                 </li>
