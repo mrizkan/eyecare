@@ -47,7 +47,7 @@
                                     <thead>
                                     <tr>
                                         <th> #</th>
-                                        <th> Cause Title</th>
+                                        <th> Document Title</th>
                                         <th> Action</th>
                                     </tr>
                                     </thead>
