@@ -16,11 +16,11 @@
                 <h1>LOGIN  Now</h1>
             </div>
             <div class="cnt-block">
-                <form action="#" method="get" class="form-outer">
-                    <input name="Username or Email" type="text" placeholder="Username or Email">
+                <form action="" method="post" class="form-outer">
+                    <input name="user_name" type="text" placeholder="Username or Email">
                     <input name="password" type="password" placeholder="password">
                     <div class="button-outer">
-                        <button class="btn" style="float:right">Login now <span class="icon-more-icon"></span></button>
+                        <button type="submit" class="btn" style="float:right">Login now <span class="icon-more-icon"></span></button>
 
                     </div>
 

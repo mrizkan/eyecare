@@ -62,7 +62,18 @@
                         <li> <span>Email</span> <a href="mailto:info@eyecare.lk">info@eyecare.lk</a> </li>
                         <li> <span>Call Us</span>+94 112 682 277</li>
                     </ul>
-                    <a href="Students-login" class="login">Student Login <span class="icon-more-icon"></span></a> </div>
+                    <?php
+
+                        if($this->session->userdata['front_user_main']){
+                            echo '<a href="Students-logout" class="login">Student Logout <span class="icon-more-icon"></span></a> </div>';
+
+                         }else{
+                            echo '<a href="Students-login" class="login">Student Login <span class="icon-more-icon"></span></a> </div>';
+
+                        }
+                    ?>
+
+<!--                    <a href="Students-login" class="login">Student Login <span class="icon-more-icon"></span></a> </div>-->
             </div>
         </div>
     </div>

@@ -242,7 +242,28 @@ class Home extends Front_Controller
     }
     public function students()
     {
+
+        if ($this->input->post()) {
+
+            $user_name = $this->input->post('user_name');
+            $password = $this->input->post('password');
+
+            if($user_name=='student' AND $password=='slog'){
+                $this->session->set_userdata("front_user_main", '1' );
+//                p($this->session->userdata->front_user_main);
+            }else{
+
+            }
+        }
+//        p($this->session->userdata['front_user_main']);
         $this->view('slogin');
+    }
+    public function students_out()
+    {
+
+        $this->session->sess_destroy();
+//        p($this->session);
+        redirect(base_url()."Students-login");
     }
 
     public function member()
