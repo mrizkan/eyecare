@@ -255,7 +255,7 @@ class Home extends Front_Controller
 
             }
         }
-//        p($this->session->userdata['front_user_main']);
+//      p($this->session->userdata['front_user_main']);
         $this->view('slogin');
     }
     public function students_out()
