@@ -46,7 +46,9 @@
 <section class="login-wrapper">
     <div class="inner">
         <div class="login">
-            <div class="login-logo"> <a href="<?= base_url('/') ?>"><img src="<?= base_url() ?>media/images/logo.png" class="img-responsive" alt=""></a> </div>
+            <div class="login-logo">
+                <a href="<?= base_url('/') ?>"><img src="<?= base_url() ?>media/images/logo.png" class="img-responsive" alt=""></a>
+            </div>
             <div class="head-block">
                 <h1>LOGIN  Now</h1>
             </div>

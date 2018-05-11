@@ -117,7 +117,7 @@
                 <li class="has_sub" >
                     <a href="#" class="waves-effect">
                         <i class="ion ion-android-book"></i>
-                        <span> Vacancy </span> <span
+                        <span> Document </span> <span
                             class="menu-arrow"></span> </a>
                     <ul style="">
                         <li><a href="<?= base_url('admin/Document/create') ?>"><span>Create</span></a></li>

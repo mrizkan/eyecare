@@ -33,21 +33,23 @@
     <div class="container">
 
         <ul class="row cs-style-3">
-
+            <?php foreach ($documents as $document): ?>
                 <li class="col-sm-4" style="margin-bottom: 20px;">
                     <div class="inner">
+
                         <figure><img src="<?= base_url() ?>media/images/logo.png" class="img-responsive">
                             <figcaption>
-                                <div class="cnt-block"><a href="" class="plus-icon">+</a>
-                                    <h3>Download the Document<br><br></h3>
+                                <div class="cnt-block"><a href="<?=base_url('media/doc/').$document->File ?>" class="plus-icon">+</a>
+                                    <h3>Download the <?=$document->DocumentTitle ?> Document<br><br></h3>
 
                                 </div>
                             </figcaption>
                         </figure>
+
                     </div>
                 </li>
 
-
+            <?php endforeach; ?>
 
         </ul>
 

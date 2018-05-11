@@ -65,6 +65,7 @@ $route['Event-Details/(.+)/(.+)'] = 'Home/detail/$2';
 $route['Cause-Details/(.+)/(.+)'] = 'Home/detail2/$2';
 $route['Students-login'] = 'Home/students';
 $route['Students-logout'] = 'Home/students_out';
+$route['Account'] = 'Home/account';
 //$route['IP-Tv'] = 'Home/iptv';
 //$route['Package-Details/(.+)/(.+)/(:num)'] = 'Home/package_details/$3';
 

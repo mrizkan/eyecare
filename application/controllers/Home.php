@@ -24,6 +24,7 @@ class Home extends Front_Controller
         $this->load->model('Iptv_model', 'iptv');
         $this->load->model('Gallery_model', 'gallery');
         $this->load->model('Events_model', 'event');
+        $this->load->model('Document_model', 'document');
 
 
 
@@ -250,6 +251,7 @@ class Home extends Front_Controller
 
             if($user_name=='student' AND $password=='slog'){
                 $this->session->set_userdata("front_user_main", '1' );
+                redirect(base_url()."Account");
 //                p($this->session->userdata->front_user_main);
             }else{
 
@@ -257,6 +259,18 @@ class Home extends Front_Controller
         }
 //      p($this->session->userdata['front_user_main']);
         $this->view('slogin');
+    }
+
+    public function account(){
+        if($this->session->userdata['front_user_main']) {
+            $d['documents'] = $this->document->order_by('Order', 'ASC')->get_all();
+//            p($this->db->last_query());
+//            p($d['documents']);exit;
+            $this->view('download', $d);
+        }else{
+            redirect(base_url()."Students-login");
+        }
+
     }
     public function students_out()
     {
