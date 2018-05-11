@@ -2,26 +2,36 @@
 
     <!-- Start Banner Carousel -->
     <div class="banner-outer">
-        <div class="banner-slider">
-
-
-            <?php foreach ($sliders as $slider): ?>
-            <div class="slide1">
-                <div class="container">
-                    <div class="content animated fadeInRight">
-                        <div class="fl-right">
-                            <img class="banner-outer slide1" src="<?=UP.$slider->Image ?>" style="no-repeat center top / cover">
-                            <h1 class="animated fadeInRight"><?=$slider->SliderTitle ?> <span class="animated fadeInRight"><?=$slider->title2 ?></span>
-                            </h1>
-                            <p class="animated fadeInRight"><?=$slider->ShortDescription ?></p>
-                            <a href="<?=$slider->Url ?>" class="btn animated fadeInRight">Know More <span class="icon-more-icon"></span></a>
+        <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 588px;"><div class="banner-slider" style="width: auto; position: relative;">
+        <?php foreach ($sliders as $slider): ?>
+                    <div class="slide1" style="float: none; list-style: outside none none; position: absolute; width: 1349px; z-index: 0; display: none;background: url('<?=UP.$slider->Image ?>') no-repeat center top / cover;" aria-hidden="true">
+                        <div class="container">
+                            <div class="content animated fadeInRight">
+                                <div class="fl-right">
+                                    <h1 class="animated fadeInRight"><?=$slider->SliderTitle ?></h1>
+                                    <p class="animated fadeInRight"><?=$slider->ShortDescription ?></p>
+                                    <a href="<?=$slider->Url ?>" class="btn animated fadeInRight">Know More <span class="icon-more-icon"></span></a> </div>
+                            </div>
                         </div>
+                    </div>
+        <?php endforeach; ?>
+
+                </div>
+            </div>
+
+            <div class="bx-controls bx-has-pager">
+                <div class="bx-pager bx-default-pager">
+                    <div class="bx-pager-item">
+                        <a href="" data-slide-index="0" class="bx-pager-link">1</a>
+                    </div>
+                    <div class="bx-pager-item">
+                        <a href="" data-slide-index="1" class="bx-pager-link active">2</a>
+                    </div>
+                    <div class="bx-pager-item">
+                        <a href="" data-slide-index="2" class="bx-pager-link">3</a>
                     </div>
                 </div>
             </div>
-            <?php endforeach; ?>
-
-
         </div>
     </div>
     <!-- End Banner Carousel -->

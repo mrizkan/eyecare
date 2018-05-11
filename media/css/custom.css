@@ -544,6 +544,9 @@ input:focus, textarea:focus, select:focus {
 	height: 588px;
 }
 
+.banner-outer .slide1 {
+	background: url(../images/banner2.jpg) no-repeat center top / cover;
+}
 .banner-outer .slide2 {
 	background: url(../images/banner2.jpg) no-repeat center top / cover;
 }
