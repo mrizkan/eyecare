@@ -24,7 +24,17 @@
 </div>
 
 <!-- End Banner -->
-
+<style>
+    {   .riz
+        display: block;
+        padding-bottom: 36px;
+        font-family: 'texgyreadventorregular';
+        font-size: 22px;
+        color: #41484d;
+        line-height: 20px;
+        text-transform: none;
+    }
+</style>
 <!-- Start News & Events -->
 
 
@@ -34,12 +44,12 @@
 
         <ul class="row cs-style-3">
             <?php foreach ($documents as $document): ?>
-                <li class="col-sm-4" style="margin-bottom: 20px;">
+                <li class="col-sm-4" style="margin-bottom: 20px; ">
                     <div class="inner">
 
-                        <figure><img src="<?= base_url() ?>media/images/logo.png" class="img-responsive">
+                        <figure><img src="<?= base_url() ?>media/images/downs.jpg" class="img-responsive">
                             <figcaption>
-                                <div class="cnt-block"><a href="<?=base_url('media/doc/').$document->File ?>" class="plus-icon">+</a>
+                                <div class="cnt-block" style="line-height: 20px;"><a href="<?=base_url('media/doc/').$document->File ?>" class="plus-icon">+</a>
                                     <h3>Download the <?=$document->DocumentTitle ?> Document<br><br></h3>
 
                                 </div>
@@ -54,7 +64,7 @@
         </ul>
 
     </div>
-    </div>
+
 </section>
 <!-- End News & Events -->
 

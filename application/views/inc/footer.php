@@ -8,12 +8,8 @@
                     <div class="connect-us">
                         <h3>Connect with Us</h3>
                         <ul class="follow-us clearfix">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.facebook.com/EYECARESRILANKA/?pnref=about.work"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -41,7 +37,7 @@
                 <div class="col-sm-3">
                     <div>
                         <br>
-                        <p>© 2018 <span>EYE CARE INSTITUTE</span>.<br> POWERED BY RIZ CREATION</p>
+                        <p>© 2018 <span>EYE CARE INSTITUTE</span>.<br> POWERED BY <a href="http://rizcreation.com/" target="_blank"><span> RIZ CREATIONS<span</a></p>
 
                     </div>
                 </div>

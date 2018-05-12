@@ -54,7 +54,7 @@
             </div>
             <div class="cnt-block">
                 <form action="" method="post" class="form-outer">
-                    <input name="user_name" type="text" placeholder="Username or Email">
+                    <input name="user_name" type="text" placeholder="Username">
                     <input name="password" type="password" placeholder="password">
                     <div class="button-outer">
                         <button class="btn" type="submit">Login now <span class="icon-more-icon"></span></button>

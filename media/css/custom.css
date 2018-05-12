@@ -543,6 +543,13 @@ input:focus, textarea:focus, select:focus {
 	display: block;
 	height: 588px;
 }
+.banner-outer .slide1 {
+	background: url(../images/banner1.jpg) no-repeat center top / cover;
+}
+.banner-outer .slide1, .banner-outer .slide2, .banner-outer .slide3 {
+	display: block;
+	height: 588px;
+}
 
 .banner-outer .slide1 {
 	background: url(../images/banner2.jpg) no-repeat center top / cover;
