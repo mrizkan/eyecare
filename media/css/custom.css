@@ -789,7 +789,7 @@ input:focus, textarea:focus, select:focus {
 .video-block {
 	height: 0;
 	overflow: hidden;
-	padding-bottom: 56.25%;
+	padding-bottom: 100%;
 	position: relative;
 }
 .video-block iframe, .video-block object, .video-block embed {

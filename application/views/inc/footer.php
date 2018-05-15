@@ -15,23 +15,12 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="subscribe">
-                        <h3>Subscribe  with Us</h3>
+
                         <!-- Begin MailChimp Signup Form -->
-                        <div id="mc_embed_signup">
-                            <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="enter your email address" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                        <input type="text" name="" tabindex="-1" value="">
-                                    </div>
-                                    <div class="clear">
-                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <!--End mc_embed_signup-->
+                        <img src="<?= base_url() ?>media/images/flogo11.png" class="img-responsive" style="width: 100px; height: 50px; float: left" alt="">
+                        <a href="http://www.tvec.gov.lk/" target="_blank"><img src="<?= base_url() ?>media/images/flogo22.png" class="img-responsive" style="width: 100px; height: 50px;" alt="">
+                        <!--End mc_embed_signup--></a>
+
                     </div>
                 </div>
                 <div class="col-sm-3">
