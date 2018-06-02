@@ -76,13 +76,24 @@
             <div class="row">
                 <div class="col-sm-7 col-sm-push-5 left-block"><span class="sm-head">Who We Are</span>
 
-                    <p>Eye Care Institute was founded in 2007 as school of Optometry. The Institute expanded its
-                        curriculum and clinical programme to reflect the changing demands of the contemporary Optometry
-                        practice. Expansion and other changes did not limit to the institute itself, thus it also
-                        reflected in all levels of eye care professionals and other organization those dealing with
-                        optometry. Today the Eye Care Institute conducts different levels of Optician & Optometry
-                        programmes to cater the demand of the country. Further, Eye Care provides largest network of
-                        Optometry programmes with the use of its past students.</p>
+                    <p>Optometrists are independent primary health care providers who examine, diagnose, treat, and
+                        manage diseases and disorders of the visual system, the eye, and associated structures as well
+                        as diagnose related systemic conditions.</p>
+                        <p>Optometrists provide significant percentage of the primary eye care services in Sri Lanka. They
+                        are more widely distributed geographically than other eye care providers and are readily
+                            accessible for the delivery of eye and vision care services.</p>
+                        <p>The mission of the profession of optometry is to fulfil the vision and eye care needs of the
+                        public through clinical care, research, and education. During an examination, Optometrist also
+                        assesses general health conditions. The diagnosis of systemic manifestations of ocular disease
+                        is necessary to preserve and enhance the patient's quality of life. When appropriate, the
+                        optometrist refers patients to other health care professionals and frequently works with them in
+                            co-managing the patient's condition.</p>
+                        <p>Those who choose optometry enjoy challenging and rewarding careers. The type of practice setting
+                        which the optometrist may enter is also expanding. While private solo practice is still the
+                        predominant mode of practice, more optometrists are entering into partnerships or group
+                        practices with other optometrists or other health care providers. Health maintenance
+                        organizations, institute and research.
+                    </p>
                     <div class="know-more-wrapper"><a href="About-Us" class="know-more">Know More <span
                                     class="icon-more-icon"></span></a></div>
                 </div>
@@ -251,10 +262,12 @@
                 <h2>Alumini Testimonials</h2>
                 <ul class="testimonial-slide">
                     <li>
-                        <p>The Best Institute I ever saw, Friendly environment, Best Teaching Practice.Recomended for all.</p>
+                        <p>The Best Institute I ever saw, Friendly environment, Best Teaching Practice.Recomended for
+                            all.</p>
                         <span>Thomas, <span>Sri Lanka</span></span></li>
                     <li>
-                        <p>It is a great Opertunity for me to Study in here, Best methods and resonalbe price. Good luck</p>
+                        <p>It is a great Opertunity for me to Study in here, Best methods and resonalbe price. Good
+                            luck</p>
                         <span>Minda, <span>Indian</span></span></li>
                     <li>
                         <p>Quality Teaching and life path chaning Institute. Thank Eye Care</p>
