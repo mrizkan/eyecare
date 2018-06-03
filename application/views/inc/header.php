@@ -89,7 +89,7 @@
                 <ul class="nav navbar-nav">
                     <li> <a href="<?= base_url('/') ?>">Home</a></li>
                     <li> <a href="<?= base_url('About-Us') ?>">About Us</a></li>
-                    <li> <a href="<?= base_url('Services') ?>">Our Service</a></li>
+                    <li> <a href="<?= base_url('Activities') ?>">Activities</a></li>
                     <li class="dropdown"> <a data-toggle="dropdown" href="#">Our Courses <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <?php foreach ($blogs as $blog): ?>
