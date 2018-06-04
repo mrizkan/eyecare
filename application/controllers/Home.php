@@ -193,6 +193,38 @@ class Home extends Front_Controller
         $this->view('about-us');
     }
 
+    public function faculty()
+    {
+
+        $this->view('faculty');
+    }
+
+    public function alumni()
+    {
+
+        $this->view('alumni');
+    }
+
+    public function research()
+    {
+
+        $this->view('re-search');
+    }
+
+    public function association()
+    {
+
+        $this->view('association');
+    }
+
+    public function lions()
+    {
+
+        $this->view('lions');
+    }
+
+
+
     public function detail($id)
     {
 //        p($id);

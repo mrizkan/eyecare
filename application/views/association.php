@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="content">
-                    <h1>Activities</h1>
+                    <h1>Association</h1>
 
                 </div>
             </div>
@@ -40,24 +40,6 @@
             </div>
         </div>
 
-        <hr>
-        <div class="row">
-            <div class="col-sm-12 padding-top">
-                <h2>Lions Club</h2>
-                <img src="<?= base_url() ?>media/images/CSR-India03.jpg"
-                     class="img-responsive" style="width: 100%; height: auto" alt="">
-            </div>
-        </div>
-
-
-        <hr>
-        <div class="row">
-            <div class="col-sm-12 padding-top">
-                <h2>Re-search</h2>
-                <img src="<?= base_url() ?>media/images/research.jpg"
-                     class="img-responsive" style="width: 100%; height: auto" alt="">
-            </div>
-        </div>
 
 
     </div>

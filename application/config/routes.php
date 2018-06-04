@@ -56,6 +56,11 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['About-Us'] = 'Home/about_us';
+$route['Faculty'] = 'Home/faculty';
+$route['Alumni'] = 'Home/alumni';
+$route['Association'] = 'Home/association';
+$route['Lions-club'] = 'Home/lions';
+$route['Re-search'] = 'Home/research';
 $route['Contact-Us'] = 'Home/contact_us';
 $route['Activities'] = 'Home/services';
 $route['Packages'] = 'Home/packages';

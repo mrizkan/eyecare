@@ -88,8 +88,24 @@
 
                 <ul class="nav navbar-nav">
                     <li> <a href="<?= base_url('/') ?>">Home</a></li>
-                    <li> <a href="<?= base_url('About-Us') ?>">About Us</a></li>
-                    <li> <a href="<?= base_url('Activities') ?>">Activities</a></li>
+                    <li class="dropdown"> <a data-toggle="dropdown" href="#">About Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="<?= base_url('About-Us') ?>">Who We are</a></li>
+                            <li><a href="<?= base_url('Faculty') ?>">Our Faculty</a></li>
+                            <li><a href="<?= base_url('Alumni') ?>">Alumni</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown"> <a data-toggle="dropdown" href="#">Activities <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="<?= base_url('Association') ?>">Association</a></li>
+                            <li><a href="<?= base_url('Lions-club') ?>">Lions Club</a></li>
+                            <li><a href="<?= base_url('Re-search') ?>">Re-search</a></li>
+
+                        </ul>
+                    </li>
                     <li class="dropdown"> <a data-toggle="dropdown" href="#">Our Courses <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <?php foreach ($blogs as $blog): ?>
