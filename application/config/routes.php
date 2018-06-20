@@ -61,6 +61,7 @@ $route['Alumni'] = 'Home/alumni';
 $route['Association'] = 'Home/association';
 $route['Lions-club'] = 'Home/lions';
 $route['Re-search'] = 'Home/research';
+$route['Optometry'] = 'Home/optometry';
 $route['Contact-Us'] = 'Home/contact_us';
 $route['Activities'] = 'Home/services';
 $route['Packages'] = 'Home/packages';

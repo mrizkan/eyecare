@@ -44,34 +44,7 @@
 
     <!-- Start About Section -->
     <section class="about">
-        <div class="container">
-            <ul class="row our-links">
-                <li class="col-sm-4 apply-online clearfix equal-hight">
-                    <div class="icon"><img src="<?= base_url() ?>media/images/apply-online-ico.png"
-                                           class="img-responsive" alt=""></div>
-                    <div class="detail">
-                        <h3>We have best Courses</h3>
-                        <p>Best Quality of Courses from Us</p>
-                    </div>
-                </li>
-                <li class="col-sm-4 prospects clearfix equal-hight">
-                    <div class="icon"><img src="<?= base_url() ?>media/images/prospects-ico.png" class="img-responsive"
-                                           alt=""></div>
-                    <div class="detail">
-                        <h3><span>Download</span>Prospects</h3>
-                        <p>Use your cardinalities for download</p>
-                    </div>
-                </li>
-                <li class="col-sm-4 certification clearfix equal-hight">
-                    <div class="icon"><img src="<?= base_url() ?>media/images/certification-ico.png"
-                                           class="img-responsive" alt=""></div>
-                    <div class="detail">
-                        <h3>Certification</h3>
-                        <p>World Class Certification</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 col-sm-push-5 left-block"><span class="sm-head">Who We Are</span>

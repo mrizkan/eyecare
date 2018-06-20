@@ -211,6 +211,12 @@ class Home extends Front_Controller
         $this->view('re-search');
     }
 
+    public function optometry()
+    {
+
+        $this->view('optometry');
+    }
+
     public function association()
     {
 
