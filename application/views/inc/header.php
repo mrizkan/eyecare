@@ -96,6 +96,7 @@
                             <li><a href="<?= base_url('Alumni') ?>">Alumni</a></li>
                             <li><a href="<?= base_url('Optometry') ?>">Optometry</a></li>
 
+
                         </ul>
                     </li>
                     <li class="dropdown"> <a data-toggle="dropdown" href="#">Activities <i class="fa fa-angle-down" aria-hidden="true"></i></a>

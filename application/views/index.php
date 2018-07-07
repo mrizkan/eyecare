@@ -47,21 +47,21 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-7 col-sm-push-5 left-block"><span class="sm-head">Who We Are</span>
+                <div class="col-sm-7 col-sm-push-5 left-block"><span class="sm-head" style="font-size: 21px; font-weight: bold;">Who We Are</span>
 
-                    <p>Optometrists are independent primary health care providers who examine, diagnose, treat, and
+                    <p style="color: black;"><br>Optometrists are independent primary health care providers who examine, diagnose, treat, and
                         manage diseases and disorders of the visual system, the eye, and associated structures as well
                         as diagnose related systemic conditions.</p>
-                        <p>Optometrists provide significant percentage of the primary eye care services in Sri Lanka. They
+                        <p style="color: black;">Optometrists provide significant percentage of the primary eye care services in Sri Lanka. They
                         are more widely distributed geographically than other eye care providers and are readily
                             accessible for the delivery of eye and vision care services.</p>
-                        <p>The mission of the profession of optometry is to fulfil the vision and eye care needs of the
+                        <p style="color: black;">The mission of the profession of optometry is to fulfil the vision and eye care needs of the
                         public through clinical care, research, and education. During an examination, Optometrist also
                         assesses general health conditions. The diagnosis of systemic manifestations of ocular disease
                         is necessary to preserve and enhance the patient's quality of life. When appropriate, the
                         optometrist refers patients to other health care professionals and frequently works with them in
                             co-managing the patient's condition.</p>
-                        <p>Those who choose optometry enjoy challenging and rewarding careers. The type of practice setting
+                        <p style="color: black;">Those who choose optometry enjoy challenging and rewarding careers. The type of practice setting
                         which the optometrist may enter is also expanding. While private solo practice is still the
                         predominant mode of practice, more optometrists are entering into partnerships or group
                         practices with other optometrists or other health care providers. Health maintenance
@@ -218,7 +218,7 @@
 
                         <a class="galleryItem" href="<?= UP . $gallery->Image ?>"><span
                                     class="icon-enlarge-icon"></span></a></div>
-                    <figure><img src="<?= base_url() ?>media/images/tour1.jpg" class="img-responsive" alt=""></figure>
+                    <figure><img src="<?= UP . $gallery->Image ?>" class="img-responsive" alt=""></figure>
                 </li>
             <?php endforeach; ?>
 
