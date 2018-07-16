@@ -94,7 +94,7 @@
                             <li><a href="<?= base_url('About-Us') ?>">Who We are</a></li>
                             <li><a href="<?= base_url('Faculty') ?>">Our Faculty</a></li>
                             <li><a href="<?= base_url('Alumni') ?>">Alumni</a></li>
-                            <li><a href="<?= base_url('Optometry') ?>">Optometry</a></li>
+                            <li><a href="<?= base_url('Optometry') ?>">About Optometry</a></li>
 
 
                         </ul>
@@ -102,8 +102,8 @@
                     <li class="dropdown"> <a data-toggle="dropdown" href="#">Activities <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
 
-                            <li><a href="<?= base_url('Association') ?>">Association</a></li>
-                            <li><a href="<?= base_url('Lions-club') ?>">Lions Club</a></li>
+                            <li><a href="<?= base_url('Association') ?>">Eye Care Optometric Association</a></li>
+                            <li><a href="<?= base_url('Lions-club') ?>">Lions Club Of Colombo Eye Care</a></li>
                             <li><a href="<?= base_url('Re-search') ?>">Re-search</a></li>
 
                         </ul>
