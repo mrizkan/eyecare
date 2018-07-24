@@ -36,8 +36,10 @@ class Home extends Front_Controller
 //
         $d['sliders'] = $this->slider->order_by('Order', 'ASC')->get_all();
         $d['blogs'] = $this->blog->order_by("Order", "ASC")->get_all();
+        $d['slnews'] = $this->slnews->order_by("Order", "ASC")->get_all();
         $d['events'] = $this->event->order_by("Order", "DESC")->limit(2)->get_all();
         $d['galleries'] = $this->gallery->limit(10)->order_by('GalleryId','desc')->get_all();
+        //$d['news'] = $this->newss->order_by("Order", "ASC")->get_all();
 //        $d['related_products'] = $this->product->order_by("Order", "ASC")->limit(6)->get_all();
 //        $d['related_products'] = $this->product->limit(4)->order_by("ProductId", "DESC")->get_all();
 
@@ -245,6 +247,14 @@ class Home extends Front_Controller
         $this->load->model('Blog_model','blog');
         $d['blogq'] = $this->db->from('blog')->where(['BlogID'=>$id])->get()->result();
         $this->view('course-details', $d);
+    }
+
+    public function newss($id)
+    {
+//        p($id);
+        $this->load->model('News_model','news');
+        $d['newsq'] = $this->db->from('news')->where(['NewsID'=>$id])->get()->result();
+        $this->view('activity-details', $d);
     }
 
 

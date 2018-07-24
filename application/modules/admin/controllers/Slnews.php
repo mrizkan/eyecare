@@ -5,8 +5,8 @@ include_once APPPATH . "modules/admin/core/MY_Controller.php";
 class Slnews extends MY_Controller
 {
     var $page = "slnews";
-    var $img_width = 263;
-    var $img_height = 280;
+    var $img_width = 72;
+    var $img_height = 72;
 
     function __construct()
     {
@@ -31,7 +31,7 @@ class Slnews extends MY_Controller
 
         $this->form_validation->set_rules("form[SlNewsTitle]", "Sri Lanka News Title", "required");
         $this->form_validation->set_rules("form[Image]", "News Image", "required");
-        $this->form_validation->set_rules("form[Description]", "Description", "required");
+      /*  $this->form_validation->set_rules("form[Description]", "Description", "required");*/
         $this->form_validation->set_rules("form[ShortDescription]", "Short Description", "required");
 
         if ($this->form_validation->run()) {

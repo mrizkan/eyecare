@@ -69,6 +69,7 @@ $route['Events'] = 'Home/news_events';
 $route['Gallery'] = 'Home/gallery';
 $route['Event-Details/(.+)/(.+)'] = 'Home/detail/$2';
 $route['Cause-Details/(.+)/(.+)'] = 'Home/detail2/$2';
+$route['Activity-Details/(.+)/(.+)'] = 'Home/newss/$2';
 $route['Students-login'] = 'Home/students';
 $route['Students-logout'] = 'Home/students_out';
 $route['Account'] = 'Home/account';

@@ -225,15 +225,15 @@
                     </ul>
                 </li>
 
-                <li class="has_sub" style="display: none">
+                <li class="has_sub">
                     <a href="#" class="waves-effect">
                         <i class="fa fa-file"></i>
-                        <span> Latest News </span> <span
+                        <span> Activities  </span> <span
                             class="menu-arrow"></span> </a>
                     <ul style="">
                         <li><a href="<?= base_url('admin/news/create') ?>"><span>Create</span></a></li>
                         <li><a href="<?= base_url('admin/news/') ?>"><span>Manage</span></a></li>
-                        <li><a href="<?= base_url('admin/news/rearrange') ?>"><span>News Re-arrange</span></a></li>
+                        <li style="display: none;"><a href="<?= base_url('admin/news/rearrange') ?>"><span>News Re-arrange</span></a></li>
                     </ul>
                 </li>
 
@@ -249,19 +249,7 @@
                     </ul>
                 </li>
 
-                <li class="has_sub" style="display: none">
-                    <a href="#" class="waves-effect">
-                        <i class="ion ion-android-add-contact"></i>
-                        <span> Sri Lanka News </span> <span
-                            class="menu-arrow"></span> </a>
-                    <ul style="">
-                        <li><a href="<?= base_url('admin/slnews/create') ?>"><span>Create</span></a></li>
-                        <li><a href="<?= base_url('admin/slnews/') ?>"><span>Manage</span></a></li>
-                        <li>
-                            <a href="<?= base_url('admin/slnews/rearrange') ?>"><span>Sri Lanka News Re-arrange</span></a>
-                        </li>
-                    </ul>
-                </li>
+
 
                 <li class="has_sub">
                     <a href="#" class="waves-effect">
@@ -308,6 +296,20 @@
                         <li><a href="<?= base_url('admin/video/create') ?>"><span>Create</span></a></li>
                         <li><a href="<?= base_url('admin/video/') ?>"><span>Manage</span></a></li>
                         <li><a href="<?= base_url('admin/video/rearrange') ?>"><span>Gallery Re-arrange</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="has_sub">
+                    <a href="#" class="waves-effect">
+                        <i class="ion ion-android-add-contact"></i>
+                        <span> Testimonials </span> <span
+                                class="menu-arrow"></span> </a>
+                    <ul style="">
+                        <li><a href="<?= base_url('admin/slnews/create') ?>"><span>Create</span></a></li>
+                        <li><a href="<?= base_url('admin/slnews/') ?>"><span>Manage</span></a></li>
+                        <li style="display: none;">
+                            <a href="<?= base_url('admin/slnews/rearrange') ?>"><span>Sri Lanka News Re-arrange</span></a>
+                        </li>
                     </ul>
                 </li>
                 <!--                <li class="has_sub">-->

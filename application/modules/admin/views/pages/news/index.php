@@ -22,8 +22,8 @@
                         <h4 class="page-title">News</h4>
                         <ol class="breadcrumb p-0">
                             <li><a href="<?= base_url('admin') ?>">Dashboard</a></li>
-                            <li><a href="<?= base_url('admin/news') ?>"> News</a></li>
-                            <li class="active"> News List</li>
+                            <li><a href="<?= base_url('admin/news') ?>"> Activities</a></li>
+                            <li class="active"> Activity List</li>
                         </ol>
                         <div class="clearfix"></div>
                     </div>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="card-box">
-                        <h4 class="header-title m-t-0 m-b-30">News Details</h4>
+                        <h4 class="header-title m-t-0 m-b-30">Activity Details</h4>
 
                         <div class="row">
                             <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 col-xl-12">
@@ -47,8 +47,8 @@
                                     <thead>
                                     <tr>
                                         <th> #</th>
-                                        <th> News Image</th>
-                                        <th> News Name</th>
+                                        <th> Activity Image</th>
+                                        <th> Activity Name</th>
                                         <th> Action</th>
                                     </tr>
                                     </thead>
@@ -56,7 +56,7 @@
                                     <?php foreach ($records as $k => $row): ?>
                                         <tr>
                                             <td> <?= $k + 1 ?>  </td>
-                                            <td><img src="<?= UPT . $row->Image ?>" width="100"
+                                            <td><img src="<?= UP . $row->Image ?>" width="100"
                                                      class="img-responsive img-thumbnail"></td>
                                             <td> <?= $row->NewsTitle ?> </td>
                                             <td class="text-center">

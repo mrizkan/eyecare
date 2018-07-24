@@ -19,11 +19,11 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">Sri Lanka News</h4>
+                        <h4 class="page-title">Testimonials</h4>
                         <ol class="breadcrumb p-0">
                             <li><a href="<?= base_url('admin') ?>">Dashboard</a></li>
-                            <li><a href="<?= base_url('admin/slnews') ?>"> Sri Lanka News</a></li>
-                            <li class="active"> Sri Lanka News List</li>
+                            <li><a href="<?= base_url('admin/slnews') ?>"> Testimonials</a></li>
+                            <li class="active"> Testimonials List</li>
                         </ol>
                         <div class="clearfix"></div>
                     </div>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="card-box">
-                        <h4 class="header-title m-t-0 m-b-30">Sri Lanka News List</h4>
+                        <h4 class="header-title m-t-0 m-b-30">Testimonials List</h4>
 
                         <div class="row">
                             <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 col-xl-12">
@@ -47,8 +47,8 @@
                                     <thead>
                                     <tr>
                                         <th> #</th>
-                                        <th> News Image</th>
-                                        <th> News Title</th>
+                                        <th> Student Image</th>
+                                        <th> Testimonial Title</th>
                                         <th> Action</th>
                                     </tr>
                                     </thead>
@@ -56,7 +56,7 @@
                                     <?php foreach ($records as $k => $row): ?>
                                         <tr>
                                             <td> <?= $k + 1 ?>  </td>
-                                            <td><img src="<?= UPT . $row->Image ?>" width="100"
+                                            <td><img src="<?= UP. $row->Image ?>" width="100"
                                                      class="img-responsive img-thumbnail"></td>
                                             <td> <?= $row->SlNewsTitle ?> </td>
                                             <td class="text-center">

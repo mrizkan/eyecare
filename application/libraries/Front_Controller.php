@@ -29,6 +29,9 @@ class Front_Controller extends CI_Controller
         $this->load->model('Blog_model', 'blog');
         $data['blogs'] = $this->blog->get_all();
 
+        $this->load->model('News_model', 'new');
+        $data['news'] = $this->new->get_all();
+
         $this->load->model('Sri_lanka_News_model', 'slnews');
         $data['sl_news'] = $this->slnews->order_by("Order", "ASC")->limit(5)->get_all();
 

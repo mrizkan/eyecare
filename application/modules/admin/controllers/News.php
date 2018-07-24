@@ -30,7 +30,7 @@ class News extends MY_Controller
         $this->form_validation->set_rules("form[NewsTitle]", "News Title", "required");
         $this->form_validation->set_rules("form[Image]", "News Image", "required");
         $this->form_validation->set_rules("form[Description]", "Description", "required");
-        $this->form_validation->set_rules("form[ShortDescription]", "Short Description", "required");
+      /*  $this->form_validation->set_rules("form[ShortDescription]", "Short Description", "required");*/
 
         if ($this->form_validation->run()) {
 

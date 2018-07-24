@@ -115,9 +115,8 @@
         <div class="container">
             <ul class="row">
                 <li class="col-sm-4 equal-hight">
-                    <div class="inner"><img src="<?= base_url() ?>media/images/study-time-ico.jpg"
-                                            alt="Malleable Study Time">
-                        <h3>Optometry Clinic</h3>
+                    <div class="inner">
+                        <h3>Eye Care Optometric Association</h3>
                         <p>Eye care clinic with comprehensive eye examination by our lecturers provide complete
                             innovative Eye Care. Complete Eye Care explains conventional vision examination, diagnosis
                             of eye diseases, optical & vision theraphy management, further referral to related
@@ -125,9 +124,8 @@
                     </div>
                 </li>
                 <li class="col-sm-4 equal-hight">
-                    <div class="inner"><img src="<?= base_url() ?>media/images/placement-ico.jpg"
-                                            alt="Placement Assistance">
-                        <h3>Optical & Dispensing</h3>
+                    <div class="inner">
+                        <h3>Lions Club Of Colombo Eye Care</h3>
                         <p>Along side with optometry Clinic– it carries necessary Optical dispensing, which is also
                             equipped with modern Optical lab, so the technical necessary act could be carried out
                             promptly under our Optometrist supervision. Our optical dispense all varieties of branded
@@ -135,34 +133,31 @@
                     </div>
                 </li>
                 <li class="col-sm-4 equal-hight">
-                    <div class="inner"><img src="<?= base_url() ?>media/images/easy-access-ico.jpg"
-                                            alt="Easy To Access">
-                        <h3>Easy To Access</h3>
+                    <div class="inner">
+                        <h3>Eye Care Network </h3>
                         <p>There is easy accessibility to online help in terms of online teachers and online forums.
                             Teachers can be contacted with the help of video chats and e-mails.</p>
                     </div>
                 </li>
                 <li class="col-sm-4 equal-hight">
-                    <div class="inner"><img src="<?= base_url() ?>media/images/study-go-ico.jpg" alt="Study on the Go">
-                        <h3>Study on the Go</h3>
+                    <div class="inner">
+                        <h3>Community Eye Care</h3>
                         <p>SMS that is easily accessible on a number of devices such as mobile phones, I-pads, computers
                             and other such devices. Availability of ready reckoners such that students can remember the
                             key points of the session learnt.</p>
                     </div>
                 </li>
                 <li class="col-sm-4 equal-hight">
-                    <div class="inner"><img src="<?= base_url() ?>media/images/get-innovative-ico.jpg"
-                                            alt="Get an Innovative, In-depth Transition">
-                        <h3>Get an Innovative, <span>In-depth Transition</span></h3>
+                    <div class="inner">
+                        <h3>Research</h3>
                         <p>The transition to an environment of learning becomes easy with the availability of multiple
                             sources of learning such as text books, power-point presentations, and story boards on
                             various subjects.</p>
                     </div>
                 </li>
                 <li class="col-sm-4 equal-hight">
-                    <div class="inner"><img src="<?= base_url() ?>media/images/practical-ico.jpg"
-                                            alt="Practical & Interactive Participation">
-                        <h3>Practical & Interactive <span>Participation</span></h3>
+                    <div class="inner">
+                        <h3>News  and Events</h3>
                         <p>Assessments and interactivities are given at the end of every session such that the practical
                             application of theory learnt can be gauged.</p>
                     </div>
@@ -234,25 +229,19 @@
             <div class="wrapper">
                 <h2>Alumini Testimonials</h2>
                 <ul class="testimonial-slide">
+                    <?php foreach ($slnews as $testi): ?>
                     <li>
-                        <p>The Best Institute I ever saw, Friendly environment, Best Teaching Practice.Recomended for
-                            all.</p>
-                        <span>Thomas, <span>Sri Lanka</span></span></li>
-                    <li>
-                        <p>It is a great Opertunity for me to Study in here, Best methods and resonalbe price. Good
-                            luck</p>
-                        <span>Minda, <span>Indian</span></span></li>
-                    <li>
-                        <p>Quality Teaching and life path chaning Institute. Thank Eye Care</p>
-                        <span>Lora, <span>Sri Lanka</span></span></li>
+                        <p><?= $testi->ShortDescription ?></p>
+                        <span><?= $testi->SlNewsTitle ?></span></li>
+                    <?php endforeach; ?>
                 </ul>
-                <div id="bx-pager"><a data-slide-index="0" href=""><img
-                                src="<?= base_url() ?>media/images/testimonial-thumb1.jpg" class="img-circle"
-                                alt=""/></a> <a data-slide-index="1" href=""><img
-                                src="<?= base_url() ?>media/images/testimonial-thumb2.jpg" class="img-circle"
-                                alt=""/></a> <a data-slide-index="2" href=""><img
-                                src="<?= base_url() ?>media/images/testimonial-thumb3.jpg" class="img-circle"
-                                alt=""/></a></div>
+                <div id="bx-pager">
+                    <?php foreach ($slnews as $testi): ?>
+                    <a data-slide-index="0" href=""><img src="<?= UP . $testi->Image ?>" class="img-circle"
+                                alt=""/></a>
+                    <?php endforeach; ?>
+                </div>
+
             </div>
         </div>
     </section>

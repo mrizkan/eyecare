@@ -56,7 +56,7 @@
                                     <?php foreach ($records as $k => $row): ?>
                                         <tr>
                                             <td> <?= $k + 1 ?>  </td>
-                                            <td><img src="<?= UPT . $row->Image ?>" width="100"
+                                            <td><img src="<?= UP . $row->Image ?>" width="100"
                                                      class="img-responsive img-thumbnail"></td>
                                             <td> <?= $row->BlogTitle ?> </td>
                                             <td class="text-center">

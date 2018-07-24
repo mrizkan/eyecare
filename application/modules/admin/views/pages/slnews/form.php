@@ -17,11 +17,11 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">Sri Lanka News</h4>
+                        <h4 class="page-title">Testimonials</h4>
                         <ol class="breadcrumb p-0">
                             <li><a href="<?= base_url('admin') ?>">Dashboard</a></li>
-                            <li><a href="<?= base_url('admin/slnews') ?>"> Sri Lanka News</a></li>
-                            <li class="active"> Sri Lanka News <?= empty($obj->EventId) ? "Create" : "Edit" ?> </li>
+                            <li><a href="<?= base_url('admin/slnews') ?>"> Testimonials</a></li>
+                            <li class="active"> Testimonials <?= empty($obj->EventId) ? "Create" : "Edit" ?> </li>
                         </ol>
                         <div class="clearfix"></div>
                     </div>
@@ -46,7 +46,7 @@
                                             <div class="row">
                                                 <div class="col-lg-8">
                                                     <div class="form-group">
-                                                        <label for="name">Sri Lanka News Title </label>
+                                                        <label for="name">Student Name </label>
                                                         <input type="text" id="EventTitle" name="form[SlNewsTitle]"
                                                                value="<?= $obj->SlNewsTitle ?>"
                                                                class="form-control">
@@ -57,14 +57,14 @@
 
 
                                             <div class="form-group">
-                                                <label for="description">Short Description</label>
+                                                <label for="description">Testimonial</label>
                                                 <textarea rows="5" name="form[ShortDescription]"
                                                           class="form-control"><?= $obj->ShortDescription ?></textarea>
                                                 <?= form_error('form[ShortDescription]') ?>
                                             </div>
 
 
-                                            <div class="form-group">
+                                            <div class="form-group" style="display: none;">
                                                 <label for="description">Video Embed Code </label>
                                                 <textarea rows="5" name="form[VideoEmbedCode]"
                                                           class="form-control"><?= $obj->VideoEmbedCode ?></textarea>
@@ -75,7 +75,7 @@
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <label> News Default Image
+                                                <label> Student Image
                                                     <small> image size ( 540px * 320px )</small>
                                                 </label>
                                             </div>
@@ -113,7 +113,7 @@
                                         </div>
 
 
-                                        <div class="col-lg-12">
+                                        <div class="col-lg-12" style="display: none;">
                                             <div class="form-group">
                                                 <label for="description">Description</label>
                                                 <textarea id="description" rows="5" name="form[Description]"
@@ -132,7 +132,7 @@
 
 
                     <div>
-                        <div class="card-box">
+                        <div class="card-box" style="display: none;">
                             <h4 class="header-title m-t-0 m-b-30">More Images
                                 <small> image size ( 540px * 320px )</small>
                             </h4>

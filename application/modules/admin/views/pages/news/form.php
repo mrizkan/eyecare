@@ -17,11 +17,11 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">News</h4>
+                        <h4 class="page-title">Activities </h4>
                         <ol class="breadcrumb p-0">
                             <li><a href="<?= base_url('admin') ?>">Dashboard</a></li>
-                            <li><a href="<?= base_url('admin/news') ?>"> News</a></li>
-                            <li class="active"> News <?= empty($obj->EventId) ? "Create" : "Edit" ?> </li>
+                            <li><a href="<?= base_url('admin/news') ?>"> Activities </a></li>
+                            <li class="active"> Activities  <?= empty($obj->EventId) ? "Create" : "Edit" ?> </li>
                         </ol>
                         <div class="clearfix"></div>
                     </div>
@@ -46,7 +46,7 @@
                                             <div class="row">
                                                 <div class="col-lg-8">
                                                     <div class="form-group">
-                                                        <label for="name">News Title </label>
+                                                        <label for="name">Activity Title </label>
                                                         <input type="text" id="EventTitle" name="form[NewsTitle]"
                                                                value="<?= $obj->NewsTitle ?>"
                                                                class="form-control">
@@ -56,7 +56,7 @@
                                             </div>
 
 
-                                            <div class="form-group">
+                                            <div class="form-group" style="display: none;">
                                                 <label for="description">Short Description</label>
                                                 <textarea rows="5" name="form[ShortDescription]"
                                                           class="form-control"><?= $obj->ShortDescription ?></textarea>
@@ -64,7 +64,7 @@
                                             </div>
 
 
-                                            <div class="form-group">
+                                            <div class="form-group"  style="display: none;">
                                                 <label for="description">Video Embed Code </label>
                                                 <textarea rows="5" name="form[VideoEmbedCode]"
                                                           class="form-control"><?= $obj->VideoEmbedCode ?></textarea>
@@ -75,7 +75,7 @@
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <label> News Default Image
+                                                <label> Activity Default Image
                                                     <small> image size ( 540px * 320px )</small>
                                                 </label>
                                             </div>
@@ -132,7 +132,7 @@
 
 
                     <div>
-                        <div class="card-box">
+                        <div class="card-box"  style="display: none;">
                             <h4 class="header-title m-t-0 m-b-30">More Images
                                 <small> image size ( 540px * 320px )</small>
                             </h4>

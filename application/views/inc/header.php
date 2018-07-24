@@ -101,11 +101,9 @@
                     </li>
                     <li class="dropdown"> <a data-toggle="dropdown" href="#">Activities <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
-
-                            <li><a href="<?= base_url('Association') ?>">Eye Care Optometric Association</a></li>
-                            <li><a href="<?= base_url('Lions-club') ?>">Lions Club Of Colombo Eye Care</a></li>
-                            <li><a href="<?= base_url('Re-search') ?>">Re-search</a></li>
-
+                            <?php foreach ($news as $new): ?>
+                                <li><a href="<?= base_url('Activity-Details/').url_title($new->NewsTitle).'/'.$new->NewsId ?>"><?=$new->NewsTitle ?></a></li>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
                     <li class="dropdown"> <a data-toggle="dropdown" href="#">Our Courses <i class="fa fa-angle-down" aria-hidden="true"></i></a>
